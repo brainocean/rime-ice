@@ -1,0 +1,10 @@
+patch:
+  schema_list:
+    - schema: double_pinyin_flypy   # 小鹤双拼
+    - schema: luna_pinyin_simp      # 朙月拼音 简化字
+
+  menu/page_size: 9   # 候选词个数
+
+  switcher/hotkeys:  # 這個列表裏每項定義一個快捷鍵，使哪個都中
+    - "Control+Shift+grave"
+

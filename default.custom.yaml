@@ -8,3 +8,14 @@ patch:
   switcher/hotkeys:  # 這個列表裏每項定義一個快捷鍵，使哪個都中
     - "Control+Shift+grave"
 
+  key_binder: 
+    # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字）
+    select_first_character: "minus"  
+    select_last_character: "equal"  
+
+    bindings:
+    # 翻页 [ ]
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
+    # - { when: paging, accept: comma, send: Page_Up }            # ","上一页
+    # - { when: has_menu, accept: period, send: Page_Down }       # "."下一页
